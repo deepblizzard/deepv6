@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { easeInOut, linear } from 'motion'; // ✅ import easing functions
+import { easeInOut } from 'motion'; // ✅ only easeInOut is imported
 
 export const LoaderOne = () => {
     const transition = (x: number) => {
@@ -11,7 +11,7 @@ export const LoaderOne = () => {
             repeat: Infinity,
             repeatType: 'loop' as const,
             delay: x * 0.2,
-            ease: easeInOut // ✅ fixed
+            ease: easeInOut
         };
     };
     return (
@@ -45,7 +45,7 @@ export const LoaderTwo = () => {
             repeat: Infinity,
             repeatType: 'loop' as const,
             delay: x * 0.2,
-            ease: easeInOut // ✅ fixed
+            ease: easeInOut
         };
     };
     return (
@@ -91,7 +91,7 @@ export const LoaderThree = () => {
                 animate={{ pathLength: 1, fill: 'var(--fill-final)' }}
                 transition={{
                     duration: 2,
-                    ease: easeInOut, // ✅ fixed
+                    ease: easeInOut,
                     repeat: Infinity,
                     repeatType: 'reverse'
                 }}
@@ -114,7 +114,7 @@ export const LoaderFour = ({ text = 'Loading...' }: { text?: string }) => {
                     repeat: Infinity,
                     repeatType: 'reverse',
                     repeatDelay: 2,
-                    ease: linear, // ✅ fixed
+                    ease: 'linear', // ✅ string is valid
                     times: [0, 0.2, 0.5, 0.8, 1]
                 }}
                 className='relative z-20 inline-block'>
@@ -131,7 +131,7 @@ export const LoaderFour = ({ text = 'Loading...' }: { text?: string }) => {
                     duration: 0.5,
                     repeat: Infinity,
                     repeatType: 'reverse',
-                    ease: linear, // ✅ fixed
+                    ease: 'linear',
                     times: [0, 0.2, 0.5, 0.8, 1]
                 }}>
                 {text}
@@ -147,7 +147,7 @@ export const LoaderFour = ({ text = 'Loading...' }: { text?: string }) => {
                     duration: 0.8,
                     repeat: Infinity,
                     repeatType: 'reverse',
-                    ease: linear, // ✅ fixed
+                    ease: 'linear',
                     times: [0, 0.3, 0.6, 0.8, 1]
                 }}>
                 {text}
@@ -178,7 +178,7 @@ export const LoaderFive = ({ text }: { text: string }) => {
                         repeat: Infinity,
                         repeatType: 'loop',
                         delay: i * 0.05,
-                        ease: easeInOut, // ✅ fixed
+                        ease: easeInOut,
                         repeatDelay: 2
                     }}>
                     {char === ' ' ? '\u00A0' : char}
