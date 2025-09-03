@@ -106,7 +106,7 @@ export const LoaderFour = ({ text = 'Loading...' }: { text?: string }) => {
         <div className='relative font-bold text-black [perspective:1000px] dark:text-white'>
             <motion.span
                 animate={{
-                    skew: [0, -40, 0],
+                    skewX: [0, -40, 0], // ✅ fixed
                     scaleX: [1, 2, 1]
                 }}
                 transition={{
@@ -114,7 +114,7 @@ export const LoaderFour = ({ text = 'Loading...' }: { text?: string }) => {
                     repeat: Infinity,
                     repeatType: 'reverse',
                     repeatDelay: 2,
-                    ease: 'linear', // ✅ string is valid
+                    ease: 'linear', // ✅ valid
                     times: [0, 0.2, 0.5, 0.8, 1]
                 }}
                 className='relative z-20 inline-block'>
