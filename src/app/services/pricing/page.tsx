@@ -228,6 +228,16 @@ export default function Pricing() {
                                     </li>
                                 ))}
                             </ul>
+                            <hr className='border-dashed' />
+                            <p className='font-bold'>Additional</p>
+                                         <ul className='list-outside space-y-3 text-sm'>
+                                {['6x the limits of Basic Plans'].map((item, index) => (
+                                    <li key={index} className='flex items-center gap-2 font-semibold'>
+                                        <Check className='size-3' />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
                         </CardContent>
                     </Card>
                     <Card className='relative'>
@@ -272,6 +282,16 @@ export default function Pricing() {
                                     </li>
                                 ))}
                             </ul>
+                            <hr className='border-dashed' />
+                            <p className='font-bold'>Additional</p>
+                                         <ul className='list-outside space-y-3 text-sm'>
+                                {['6x the limits of Basic Plans'].map((item, index) => (
+                                    <li key={index} className='flex items-center gap-2 font-semibold'>
+                                        <Check className='size-3' />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
                         </CardContent>
                     </Card>
                     <Card className='relative'>
@@ -310,6 +330,16 @@ export default function Pricing() {
 
                             <ul className='list-outside space-y-3 text-sm'>
                                 {['DeepForms', 'DeepMails'].map((item, index) => (
+                                    <li key={index} className='flex items-center gap-2 font-semibold'>
+                                        <Check className='size-3' />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                            <hr className='border-dashed' />
+                            <p className='font-bold'>Additional</p>
+                                         <ul className='list-outside space-y-3 text-sm'>
+                                {['6x the limits of Basic Plans'].map((item, index) => (
                                     <li key={index} className='flex items-center gap-2 font-semibold'>
                                         <Check className='size-3' />
                                         {item}
@@ -410,6 +440,16 @@ export default function Pricing() {
                                     </li>
                                 ))}
                             </ul>
+                            <hr className='border-dashed' />
+                            <p className='font-bold'>Additional</p>
+                                         <ul className='list-outside space-y-3 text-sm'>
+                                {['No limits'].map((item, index) => (
+                                    <li key={index} className='flex items-center gap-2 font-semibold'>
+                                        <Check className='size-3' />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
                         </CardContent>
                     </Card>
                     <Card className='relative'>
@@ -441,3 +481,4 @@ export default function Pricing() {
         </section>
     );
 }
+
