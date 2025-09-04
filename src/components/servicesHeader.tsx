@@ -17,7 +17,8 @@ function ServicesHeader() {
                     Beta
                 </Button>
                 <Button variant={'outline'} className='font-bold text-gray-800 dark:text-white/80'>
-                    Launches 12 Sep
+                    
+                    Early Access starts 12 Sep
                 </Button>
             </div>
             {/* <PulsatingButton>HI</PulsatingButton> */}
@@ -36,3 +37,4 @@ function ServicesHeader() {
 }
 
 export default ServicesHeader;
+
