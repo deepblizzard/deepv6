@@ -25,7 +25,7 @@ export default function Pricing() {
                 <div className='mt-8 grid gap-6 md:mt-20 md:grid-cols-3'>
                     <Card>
                         <CardHeader>
-                            <CardTitle className='font-extrabold'>DeepCreative</CardTitle>
+                            <CardTitle className='font-extrabold'>DeepCreate</CardTitle>
 
                             <span className='my-3 block text-2xl font-semibold'>
                                 $1.09 <span className='opacity-60'> / mo </span>
@@ -272,7 +272,7 @@ export default function Pricing() {
                                 ))}
                             </ul>
                             <hr className='border-dashed' />
-                            <p className='font-bold'>Everything in DeepCreative</p>
+                            <p className='font-bold'>Everything in DeepCreate</p>
 
                             <ul className='list-outside space-y-3 text-sm'>
                                 {['DeepBoards', 'DeepPixels'].map((item, index) => (
@@ -370,7 +370,7 @@ export default function Pricing() {
                         <CardContent className='space-y-4'>
                             <hr className='border-dashed' />
 
-                            <p className='font-bold'>Everything in DeepCreative</p>
+                            <p className='font-bold'>Everything in DeepCreate</p>
 
                             <ul className='list-outside space-y-3 text-sm'>
                                 {['DeepBoards', 'DeepPixels'].map((item, index) => (
@@ -481,4 +481,5 @@ export default function Pricing() {
         </section>
     );
 }
+
 
